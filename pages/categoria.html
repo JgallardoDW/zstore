@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Z Store - Categorías</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light text-center p-4">
+    <img src="../imagenes/zstore.jpeg" alt="Z Store Logo" class="img-fluid mb-3" style="max-width: 200px;" />
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">Z Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./categoria.html">Categoría</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sucursales.html">Sucursales</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="display-6 mt-4">Categorías</h1>
+    <p class="lead">Explorá nuestras categorías de productos</p>
+  </header>
+
+  <!-- Menú de desplazamiento -->
+  <div class="text-center my-4">
+    <a href="#celulares" class="btn btn-outline-primary m-2">Celulares</a>
+    <a href="#consolas" class="btn btn-outline-primary m-2">Consolas</a>
+    <a href="#electrodomesticos" class="btn btn-outline-primary m-2">Electrodomésticos</a>
+    <a href="#parlantes" class="btn btn-outline-primary m-2">Parlantes</a>
+    <a href="#estufas" class="btn btn-outline-primary m-2">Estufas</a>
+  </div>
+
+  <!-- Productos -->
+  <main class="container my-5">
+
+    <!-- CELULARES -->
+    <section id="celulares">
+      <h2 class="mb-4 text-primary">Celulares</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Samsung Galaxy A14.JPG" class="card-img-top" alt="Samsung Galaxy A14" />
+            <div class="card-body">
+              <h5 class="card-title">Samsung Galaxy A14</h5>
+              <p class="card-text">$150.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Samsung Galaxy A14" data-precio="150000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/iphone13.jpg" class="card-img-top" alt="iPhone 13" />
+            <div class="card-body">
+              <h5 class="card-title">iPhone 13</h5>
+              <p class="card-text">$420.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="iPhone 13" data-precio="420000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Xiaomi Redmi Note 12.jpg" class="card-img-top" alt="Xiaomi Redmi Note 12" />
+            <div class="card-body">
+              <h5 class="card-title">Xiaomi Redmi Note 12</h5>
+              <p class="card-text">$220.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Xiaomi Redmi Note 12" data-precio="220000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONSOLAS -->
+    <section id="consolas" class="mt-5">
+      <h2 class="mb-4 text-primary">Consolas</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/playstationcinco.jpeg" class="card-img-top" alt="PlayStation 5" />
+            <div class="card-body">
+              <h5 class="card-title">PlayStation 5</h5>
+              <p class="card-text">$750.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="PlayStation 5" data-precio="750000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Xbox Series X.jpg" class="card-img-top" alt="Xbox Series X" />
+            <div class="card-body">
+              <h5 class="card-title">Xbox Series X</h5>
+              <p class="card-text">$700.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Xbox Series X" data-precio="700000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Nintendo Switch.jpg" class="card-img-top" alt="Nintendo Switch" />
+            <div class="card-body">
+              <h5 class="card-title">Nintendo Switch</h5>
+              <p class="card-text">$490.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Nintendo Switch" data-precio="490000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELECTRODOMÉSTICOS -->
+    <section id="electrodomesticos" class="mt-5">
+      <h2 class="mb-4 text-primary">Electrodomésticos</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Licuadora Philips.jpg" class="card-img-top" alt="Licuadora Philips" />
+            <div class="card-body">
+              <h5 class="card-title">Licuadora Philips</h5>
+              <p class="card-text">$60.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Licuadora Philips" data-precio="60000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/MICROHONDAS.JPG" class="card-img-top" alt="Microondas BGH" />
+            <div class="card-body">
+              <h5 class="card-title">Microondas BGH</h5>
+              <p class="card-text">$120.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Microondas BGH" data-precio="120000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Heladera Whirlpool.jpg" class="card-img-top" alt="Heladera Whirlpool" />
+            <div class="card-body">
+              <h5 class="card-title">Heladera Whirlpool</h5>
+              <p class="card-text">$320.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Heladera Whirlpool" data-precio="320000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARLANTES -->
+    <section id="parlantes" class="mt-5">
+      <h2 class="mb-4 text-primary">Parlantes</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/JBL6FLIP.JPG" class="card-img-top" alt="Parlante JBL Flip 6" />
+            <div class="card-body">
+              <h5 class="card-title">Parlante JBL Flip 6</h5>
+              <p class="card-text">$45.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Parlante JBL Flip 6" data-precio="45000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Parlante Bose SoundLink.jpg" class="card-img-top" alt="Parlante Bose SoundLink" />
+            <div class="card-body">
+              <h5 class="card-title">Parlante Bose SoundLink</h5>
+              <p class="card-text">$70.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Parlante Bose SoundLink" data-precio="70000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Parlante Sony XB23.jpg" class="card-img-top" alt="Parlante Sony XB23" />
+            <div class="card-body">
+              <h5 class="card-title">Parlante Sony XB23</h5>
+              <p class="card-text">$50.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Parlante Sony XB23" data-precio="50000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUFAS -->
+    <section id="estufas" class="mt-5">
+      <h2 class="mb-4 text-primary">Estufas</h2>
+      <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/ESTUFALILIANA.JPG" class="card-img-top" alt="Estufa Eléctrica Liliana" />
+            <div class="card-body">
+              <h5 class="card-title">Estufa Eléctrica Liliana</h5>
+              <p class="card-text">$38.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Estufa Eléctrica Liliana" data-precio="38000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Estufa Tromen.jpg" class="card-img-top" alt="Estufa Tromen" />
+            <div class="card-body">
+              <h5 class="card-title">Estufa Tromen</h5>
+              <p class="card-text">$50.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Estufa Tromen" data-precio="50000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+        <!-- Producto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="../imagenes/Estufa de Gas.jpg" class="card-img-top" alt="Estufa de Gas" />
+            <div class="card-body">
+              <h5 class="card-title">Estufa de Gas</h5>
+              <p class="card-text">$65.000</p>
+              <button class="btn btn-primary agregar-carrito" data-nombre="Estufa de Gas" data-precio="65000">Agregar al carrito</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Carrito Desplegable -->
+  <div id="carrito" class="carrito">
+    <h5 class="text-center">Carrito</h5>
+    <ul id="carrito-lista" class="list-group list-group-flush"></ul>
+    <p class="text-center fw-bold mt-3">Total: $<span id="carrito-total">0</span></p>
+
+    <!-- Botones de acción del carrito -->
+    <div class="carrito-actions d-flex justify-content-between">
+      <button id="vaciar-carrito" class="btn btn-danger vaciar">Vaciar carrito</button>
+      <button id="comprar-carrito" class="btn btn-success comprar">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Botón flotante para abrir/cerrar carrito -->
+  <button id="carrito-toggle" class="btn btn-success carrito-toggle">🛒</button>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-1">Z Store © 2025 - Todos los derechos reservados</p>
+    <p class="mb-0">
+      Tel: <a href="tel:+5491123456789" class="text-white">+54 9 11 2345-6789</a> | 
+      Email: <a href="mailto:contacto@zstore.com" class="text-white">contacto@zstore.com</a>
+    </p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../carrito.js"></script>
+
+</body>
+</html>

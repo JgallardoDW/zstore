@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactate con Z Store para consultas, ventas y soporte. Teléfono, email y WhatsApp disponibles." />
+  <title>Contacto - Z Store</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-light text-center p-4">
+    <img src="../imagenes/zstore.jpeg" alt="Logotipo Z Store" class="img-fluid mb-3" style="max-width: 200px;" />
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html">Z Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="./categoria.html">Categoría</a></li>
+            <li class="nav-item"><a class="nav-link" href="./sucursales.html">Sucursales</a></li>
+            <li class="nav-item"><a class="nav-link active" href="./contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sección Contacto -->
+  <main class="container my-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5">Contacto</h1>
+      <p class="lead">¿Tenés dudas o consultas? Estamos para ayudarte.</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-4">
+        <h2 class="h4 mb-3">Datos de Contacto</h2>
+        <ul class="list-unstyled fs-5">
+          <li><strong>Teléfono:</strong> <a href="tel:+5491123456789">+54 9 11 2345-6789</a></li>
+          <li><strong>Email:</strong> <a href="mailto:contacto@zstore.com">contacto@zstore.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5491123456789" target="_blank" rel="noopener noreferrer">+54 9 11 2345-6789</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2 class="h4 mb-3">Formulario de Contacto</h2>
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="tuemail@ejemplo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribí tu consulta..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <p class="mb-1">Z Store © 2025 - Todos los derechos reservados</p>
+    <p class="mb-0">
+      Tel: <a href="tel:+5491123456789" class="text-white">+54 9 11 2345-6789</a> |
+      Email: <a href="mailto:contacto@zstore.com" class="text-white">contacto@zstore.com</a>
+    </p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

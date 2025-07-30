@@ -1,0 +1,519 @@
+/* style.css - Z Store - Estilos generales para todas las páginas */
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografías y base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+a {
+  color: #0d6efd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover, a:focus {
+  color: #0a58ca;
+  text-decoration: underline;
+}
+
+/* Contenedores */
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Header */
+header {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+header p.lead {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff !important;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #0d6efd !important;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #555 !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  background-color: #0d6efd;
+  color: #fff !important;
+}
+
+/* Buscador */
+#searchInput {
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Botones */
+.btn-outline-primary {
+  border-color: #0d6efd;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #0d6efd;
+  color: #fff;
+  border-color: #0a58ca;
+}
+
+/* Productos - Cards */
+.productos-lista .producto {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.productos-lista .producto:hover,
+.productos-lista .producto:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.25);
+  outline: none;
+}
+
+.productos-lista .card {
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.productos-lista .card-img-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  object-fit: cover;
+  height: 180px;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.text-success {
+  color: #198754 !important;
+  font-weight: 700;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #adb5bd;
+}
+
+/* Estilo para que todas las imágenes de productos tengan mismo tamaño */
+.card-img-top {
+  width: 100%;
+  height: 220px;      /* ajustado para que sea igual en todas las páginas */
+  object-fit: cover;
+}
+
+/* ----------- Carrito Flotante ----------- */
+
+/* Botón carrito (arriba derecha) */
+.carrito-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1100;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(13, 110, 253, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.carrito-toggle:hover,
+.carrito-toggle:focus {
+  background-color: #0a58ca;
+  outline: none;
+}
+
+/* Caja carrito desplegable */
+.carrito {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 320px;
+  max-height: 70vh;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  z-index: 1099;
+  display: none;
+  overflow-y: auto;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.carrito.activo {
+  display: block;
+}
+
+.carrito h5 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #0d6efd;
+  font-weight: 700;
+}
+
+/* Lista de productos en carrito */
+#carrito-lista {
+  list-style: none;
+  padding-left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+#carrito-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  padding: 6px 8px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+}
+
+#carrito-lista li button {
+  background-color: transparent;
+  border: none;
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+#carrito-lista li button:hover {
+  color: #a71d2a;
+}
+
+/* Total */
+#carrito-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Botones acción carrito */
+.carrito-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.carrito-actions button {
+  flex: 1;
+  padding: 0.5rem 0;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carrito-actions .vaciar {
+  background-color: #dc3545;
+  color: white;
+}
+
+.carrito-actions .vaciar:hover,
+.carrito-actions .vaciar:focus {
+  background-color: #a71d2a;
+  outline: none;
+}
+
+.carrito-actions .comprar {
+  background-color: #198754;
+  color: white;
+}
+
+.carrito-actions .comprar:hover,
+.carrito-actions .comprar:focus {
+  background-color: #145c32;
+  outline: none;
+}
+
+/* ----------- Botón flotante WhatsApp ----------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  z-index: 1050;
+  cursor: pointer;
+}
+
+.whatsapp-float img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3));
+  transition: filter 0.3s ease;
+}
+
+.whatsapp-float:hover img,
+.whatsapp-float:focus img {
+  filter: drop-shadow(0 4px 4px rgba(0,0,0,0.5));
+  outline: none;
+}
+
+/* Modal detalle producto */
+.modal-content {
+  border-radius: 0.75rem;
+}
+
+.modal-body img {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.modal-body div h4 {
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
+}
+
+.modal-body div p {
+  margin-bottom: 0.7rem;
+}
+
+.modal-footer .btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer .btn-secondary:hover,
+.modal-footer .btn-secondary:focus {
+  background-color: #5a6268;
+}
+
+/* Secciones específicas */
+
+/* Sobre Nosotros */
+.sobrenosotros-section {
+  padding: 3rem 1rem;
+  background-color: #f8f9fa;
+  color: #333;
+  text-align: center;
+}
+
+.sobrenosotros-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.sobrenosotros-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Contacto */
+.contacto-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+
+.contacto-form label {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  color: #0d6efd;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #0d6efd;
+  outline: none;
+}
+
+.contacto-form button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #0d6efd;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover,
+.contacto-form button:focus {
+  background-color: #0a58ca;
+}
+
+/* Sucursales */
+.sucursales-list {
+  max-width: 900px;
+  margin: 2rem auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.sucursales-list li {
+  background-color: #f8f9fa;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.1);
+}
+
+.sucursales-list li h3 {
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
+}
+
+.sucursales-list li p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Responsive */
+
+/* En pantallas pequeñas */
+@media (max-width: 767.98px) {
+  .productos-lista .card-img-top {
+    height: 140px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .sobrenosotros-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contacto-form {
+    margin: 1rem;
+  }
+
+  #cartSidebar {
+    width: 100%;
+  }
+
+  /* Ajuste carrito móvil */
+  .carrito {
+    width: 90%;
+    right: 5%;
+    top: 70px;
+    max-height: 60vh;
+  }
+}
